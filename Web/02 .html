@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2" width="1000" height="500">
+        <!-- border是边框属性，width和height在css设置 -->
+        <tr>
+            <td>姓名</td>
+            <td>成绩</td>
+            <td>评语</td>
+        </tr>
+        <tr>
+            <td>小哥哥</td>
+            <td>100分</td>
+            <td>真棒</td>
+        </tr>
+        <tr>
+            <td>小姐姐</td>
+            <td>100分</td>
+            <td>真棒</td>
+        </tr>
+        <tr>
+            <td>郭德纲</td>
+            <td>100分</td>
+            <td>没有郭德纲，相声早黄了，有了郭德纲，相声更黄了</td>
+        </tr>
+
+    </table>
+    <table border="2">
+        <caption><strong>学生成绩单</strong></caption>
+        <!-- caption是表头 -->
+        <tr>
+            <th>姓名</th>
+            <th>成绩</th>
+            <th>评语</th>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>100</td>
+            <td>真棒</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>99</td>
+            <td>第二</td>
+        </tr>
+        <tr>
+            <td>总结</td>
+            <td>贼眉鼠眼</td>
+            <td>真棒</td>
+        </tr>
+    </table>
+    <table border="2">
+        <caption><strong>学生成绩单</strong></caption>
+        <!-- caption是表头 -->
+        <thead>
+            <!-- thead 表头 -->
+            <tr>
+                <th>姓名</th>
+                <th>成绩</th>
+                <th>评语</th>
+            </tr>
+            <!-- shift+tab 往前缩进 -->
+        </thead>
+        <tbody>
+            <!-- tbody 表中 -->
+            <tr>
+                <td>张三</td>
+                <td>100</td>
+                <td>真棒</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>99</td>
+                <td>第二</td>
+            </tr>
+      </tbody>
+      <tfoot> 
+            <!-- tfoot 表尾 -->
+            <tr>
+                <td>总结</td>
+                <td>贼眉鼠眼</td>
+                <td>真棒</td>
+            </tr>
+        </tfoot> 
+    </table>
+
+<table border="2">
+    <caption><strong>学生成绩单</strong></caption>
+    <!-- caption是表头 -->
+    <thead>
+        <!-- thead 表头 -->
+        <tr>
+            <th>姓名</th>
+            <th>成绩</th>
+            <th>评语</th>
+        </tr>
+        <!-- shift+tab 往前缩进 -->
+    </thead>
+    <tbody>
+        <!-- tbody 表中 -->
+        <tr>
+            <td>张三</td>
+            <td rowspan="2">100</td>
+            <td>真棒</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>第二</td>
+        </tr>
+  </tbody>
+  <tfoot> 
+        <!-- tfoot 表尾 -->
+        <tr >
+            <td>总结</td>
+            <td colspan="2">贼眉鼠眼</td>
+        </tr>
+    </tfoot> 
+</table>
+
+</body>
+</html>

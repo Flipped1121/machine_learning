@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <!-- form内所有内容提交给action -->
+        文本框:<input type="text" placeholder="请输入用户名">
+        <!-- 不换行 -->
+        <br>
+        <br>
+
+        密码框:<input type="password" placeholder="请输入密码">
+        <!-- 不换行 -->
+
+        <br>
+        <br>
+
+        单选框:  <input type="radio" name="sex" id="nan"><label for="nan">男</label>
+                <label><input type="radio" name="sex" > 女</label>
+                <label><input type="radio" name="sex" checked> 保密</label>
+                <!-- label标签用于文字也可以进行选择 -->
+                <!-- alt + shift + ↓ 在下面复制一行-->
+                <!-- checked 默认选择 name 分类 -->
+
+
+        <br>
+        <br>
+
+        多选框: <input type="checkbox" checked>
+    
+
+        <br>
+        <br>
+
+        上传文件: <input type="file" multiple>
+        <!-- multiple 可以选择多个文件 -->
+
+        <br>
+        <br>
+
+        <input type="submit" value="这是提交按钮">
+        <input type="reset" value="这是重置按钮">
+        <input type="button" value="这是一个按钮">
+        <button type="submit">这是提交按钮</button>
+        <button type="reset">这是重置按钮</button>
+        <button type="button">这是一个按钮</button>
+        <!-- 可以通过JS定义button -->
+
+        <br>
+        <br>
+
+        <select>
+            <!-- 下拉菜单 -->
+            <option>北京</option>
+            <option>上海</option>
+            <option>深圳</option>
+            <option selected>广州</option>
+        </select>
+
+        <br>
+        <br>
+        <textarea cols="60" rows="30"></textarea>
+        <!-- 文本域 一大段文字 -->
+
+    </form>
+
+</body>
+</html>

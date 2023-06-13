@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p
+        {
+            color: red;
+            /* 标签选择器,会选中所有的标签 */
+        }
+        .greenyellow{color:greenyellow;}
+        .size{ font-size: 30px; font-weight: 800; font-style: italic;}
+        /* 类选择器 点开头,用class引用  color颜色 font size 字体大小*/
+        /* font weight 文字粗细 font style 字体倾斜 font family字体设置 */
+        #blue{color: rgb(8, 8, 242);}
+        /* id选择器 */
+        *{ font-weight: 100;}
+    </style>
+    <!-- 关系是样式表 -->
+<!-- <link rel="stylesheet" href="./CSS.css"> -->
+<!-- 链接css -->
+</head>
+<body>
+    <!-- 默认字号是16 微软雅黑 -->
+    <p>这是一行文字</p>
+    <p class="greenyellow size">这是另外一行文字</p>
+    <p id="blue">这是第三行文字</p>
+</body>
+</html>
