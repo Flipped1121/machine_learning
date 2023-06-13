@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from keras.saving.legacy.saved_model.load import metrics
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import GridSearchCV
@@ -18,6 +19,11 @@ data = data.fillna(data.mean())
 # print(data)
 y = data["label"]
 x = data.iloc[:, 1:-1]
+test = pd.read_csv("validate_1000.csv")
+test = test.fillna(test.mean())
+
+y1 = test["label"]
+x1 = test.iloc[:, 1:-1]
 
 
 # 划分数据集
@@ -39,9 +45,10 @@ estimator.fit(x_train, y_train)
 
 # ）模型评估
 # 直接比对真实值和预测值
-y_predict = estimator.predict(x_test)
+y_predict = estimator.predict(x1)
 print("y_predict:\n", y_predict)
-print("直接比对真实值和预测值:\n", y_test == y_predict)
+print("随机森林")
+print(metrics.classification_report(y_predict, y1))
 
 # 计算准确率
 score = estimator.score(x_test, y_test)
